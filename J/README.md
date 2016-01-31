@@ -1,6 +1,6 @@
 # Mulilayer Neural Networks
 
-A ** deep neural network** is described by a number of *layers* and *units* in each of these layers.
+A **deep neural network** is described by a number of *layers* and *units* in each of these layers.
 In a typical neural network, we have 
 - Input layer
 - Output layer
@@ -16,4 +16,6 @@ x = (x1, x2, x3)
 ```
 and the target variable takes numerical floating values. 
 Recall that the linear model is given by -
+```
 Y = AX + b
+```
