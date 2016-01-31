@@ -10,7 +10,7 @@ The number units in input layer is equal to the dimension of the training data e
 
 ## Linear Regression network
 Consider the simples neural network, one which implements the linear regression model. In such network, there is no hidden layer, only input and output layers.
-Consider the data which is is $3-$dimensional, i.e. each training example is a vector with 3-components. 
+Consider the data which is is 3-dimensional, i.e. each training example is a vector with 3-components. 
 ```
 x = (x1, x2, x3)
 ```
