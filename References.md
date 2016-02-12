@@ -1,6 +1,6 @@
 ## References for deep learning.
 
-- [Machine Learning Coursera - Week 4](https://www.coursera.org/learn/machine-learning) - Andrew Ng
+- [Machine Learning Coursera - Week 4,5](https://www.coursera.org/learn/machine-learning) - Andrew Ng
 - [Neural Nets, Manifolds and Topology](http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/) - Christopher Olah
 - [Deep Learning](http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html) - Hinton, LeCunn, Bengio
 - [Hacker Guide to Neural Networks](http://karpathy.github.io/neuralnets/) - Andrej Karpathy
