@@ -1,10 +1,17 @@
-# UdacityDeepLearning
+# DeepLearning Notes of [Janu](https://github.com/Jverma) and [Irshad](https://github.com/creativeishu)
 
-Discussions and problems from the [Udacity Deep Learning course](https://www.udacity.com/course/deep-learning--ud730).
+Discussions and notes from our readings of Deeplearning literature. 
 
 
 ## Dependencies:
-- conda
+- numpy
+- ipython notebook
+- sklearn
+- theano
+- tensorflow
+
+We will use ```conda``` development environment for python. Also ```C++``` will be used wherever needed. 
+
 
 
 
@@ -16,12 +23,16 @@ conda env create
 ```
 - Activate the environment
 ```
-source activate UdacityDeepLearning
+source activate DeepLearningNotes
 ```
-- Install TensorFlow
+- Install Deeplearning libraries e.g. TensorFlow, theano etc.
+```
+pip install Theano
+```
 ```
 conda install -c https://conda.anaconda.org/jjhelmus tensorflow
 ```
+- Begin Development
 - When done, deactivate the environment.
 ```
 source deactivate
