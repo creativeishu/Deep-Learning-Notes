@@ -1,4 +1,4 @@
-# DeepLearning Notes of [Janu](https://github.com/Jverma) and [Irshad](https://github.com/creativeishu)
+## Deep Learning Notes of [Janu](https://github.com/Jverma) and [Irshad](https://github.com/creativeishu)
 
 Discussions and notes from our readings of Deeplearning literature. 
 
@@ -25,7 +25,7 @@ conda env create
 ```
 source activate DeepLearningNotes
 ```
-- Install Deeplearning libraries e.g. TensorFlow, theano etc.
+- Install Deep learning libraries e.g. TensorFlow, theano etc.
 ```
 pip install Theano
 ```
