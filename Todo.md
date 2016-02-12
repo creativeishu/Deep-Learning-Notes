@@ -1,5 +1,7 @@
 ## Progress in understanding deep learning
 
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- [ ] Neural Networks from Andrew Ng's coursera.
+- [ ] Implementation of NN in ```python-numpy```
+- [ ] Introduction to ```theano```
+- [ ] Implementation of NN in ```theano```
+- [ ] Deep learning nature paper
