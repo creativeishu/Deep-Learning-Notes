@@ -14,3 +14,16 @@
 - Optimization: Gradient descent, SGD, conjugate gradient, Hessian-free
 - Hyperparameters: learning rate etc.
 - Pre-training
+
+
+## Practice
+- Backprop NN in python numpy.
+- NN in theano, Tensorflow.
+- ConvNet for ImageNet
+- RNN for word embeddings
+
+
+## Libraries
+- Theano
+- Tensorflow
+- Torch
