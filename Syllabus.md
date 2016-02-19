@@ -9,3 +9,8 @@
 - Restricted Boltzman Machines
 - Word Embeddings
 - Applications to NLP
+
+## Appendix
+- Optimization: Gradient descent, SGD, conjugate gradient, Hessian-free
+- Hyperparameters: learning rate etc.
+- Pre-training
