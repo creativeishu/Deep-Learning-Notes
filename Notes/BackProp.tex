@@ -1,0 +1,69 @@
+\documentclass[a4paper,10pt,notitlepage]{article}
+\oddsidemargin -0.35in 
+\topmargin -0.8in
+\textwidth 7in
+\textheight 10in
+\usepackage{multicol}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage[american]{babel}
+\usepackage[dvips]{graphicx}
+\usepackage{multicol}
+%\renewcommand{\baselinestretch}{3}
+\oddsidemargin 0.0in 
+%%this makes the odd side margin go to the default of 1inch
+\textwidth 6.5in
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{{\bf Backpropagation algorithm }} 
+
+\begin{document}
+% \section*{Backpropagation algorithm}
+Let 
+\begin{equation}
+T = \{ (x^{(1)}, y^{(1)}), (x^{(2)}, y^{(2)}), \ldots (x^{(m)}, y^{(m)}) \}
+\end{equation}
+be the training set, where $x^{(i)} \in \mathbb{R}^n$ is the {\em feature vector} and $y^{(i)}$ is the {\em target value} for $i-$th sample. \\
+The {\bf backpropagation algorithm} for computing the derivate updates in the {\em gradient descent} process is given by following steps - 
+\begin{enumerate}
+\item Let $l \in \{ 1,2,\ldots, L \}$, where $L$ is the total number of layers in the NN. 
+\item Set $\Delta_{ij}^{(l)} = 0$ for all $i,j,l$. \\
+This will contain updates for each weight. $\Delta_{ij}^{(l)}$ corresponds to the weight of unit $i$ in layer $l$ for the contribution of unit $j$ in the previous layer. 
+\item for $i \in \{ 1, 2, \ldots, m \}$
+\begin{itemize}
+\item Set $a^{(1)} = x^{(i)}$
+\item Perform forward propagation to compute activation of each layer $a^{(l)}$ for $l = 2,3, \ldots ,L$, as 
+\begin{equation*}
+a^{(l+1)} = g(a^{(l)}(\Theta^{(l)})^{T})
+\end{equation*}
+where $g$ is the {\em activation function.}
+\item Using $y^{(i)}$, compute the error of the last layer as
+\begin{equation*}
+\delta^{(L)} = a^{(L)} - y^{(i)}
+\end{equation*}
+\item Compute $\delta^{(l)}$ for $l=L-1, L-2, ..., 2$ as
+\begin{equation*}
+\delta^{(l)} = (\Theta^{(l)})^T \delta^{(l+1)}*(a^{(l)} (1 - a^{(l)}))
+\end{equation*}
+where $*$ is the element-wise multiplication.
+\item $\Delta_{ij}^{(l)} = \Delta_{ij}^{(l)} + a_{j}^{(l)} \delta_{i}^{(l+1)}$
+\end{itemize}
+\item If $j \neq 0$
+\begin{equation*}
+D_{ij}^{(l)} = \frac{1}{m} \Delta_{ij}^{(l)} + \lambda \Theta_{ij}^{(l)}.
+\end{equation*}
+else, if $j = 0$,
+\begin{equation*}
+D_{ij}^{(l)} = \frac{1}{m} \Delta_{ij}^{(l)}
+\end{equation*}
+\end{enumerate}
+It can be checked that, 
+\begin{equation*}
+\frac{\partial}{\partial \Theta^{(l)}_{ij}} J(\Theta) = D_{ij}^{(l)}
+\end{equation*}
+\end{document}
