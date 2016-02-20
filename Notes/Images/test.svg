@@ -27,7 +27,7 @@ fill="blue" stroke="gray" stroke-width="2"/>
 <line x1="300" y1="250"
 	x2="450" y2="250"
 	stroke="black"
-	stroke-width="2"
+	stroke-width="5"
 	marker-end="url(#arrow)"/>
 
 
