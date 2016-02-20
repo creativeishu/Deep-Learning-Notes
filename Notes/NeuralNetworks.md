@@ -2,7 +2,7 @@
 A **neuron** is a computational unit. It takes an input (usually a vector) and produces an output (numerical value).  
 Schematically,
 
-![alt-text](https://github.com/creativeishu/Deep-Learning-Notes/Notes/Images/Neuron.jpeg)
+![Neuron](https://raw.githubusercontent.com/creativeishu/Deep-Learning-Notes/master/Notes/Images/Neuron.jpeg)
 
 ## Artifical Neural Network
 An **ANN** is a layered network of neurons.
