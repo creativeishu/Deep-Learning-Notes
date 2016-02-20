@@ -7,7 +7,7 @@
 
 <!-- define an arrow -->
 <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refx="0" refy="0" orient="auto" markerUnits="strokeWidth">
+    <marker id="arrow" markerWidth="10" markerHeight="10" refx="0" refy="10" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#f00" />
     </marker>
 </defs>
